@@ -1,0 +1,32 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# Redirect www -> non-www (canonical domain).
+RewriteCond %{HTTP_HOST} ^www\.just-sitting\.com$ [NC]
+RewriteRule ^(.*)$ https://just-sitting.com/$1 [R=301,L]
+
+# Domeniul fara sufix de limba merge pe varianta implicita (301 permanent).
+RewriteRule ^$ /en [R=301,L]
+
+# Compatibilitate pentru favicon la radacina domeniului.
+RewriteRule ^favicon\.ico$ imgs/favicon.ico [L,NC]
+
+# Pastram accesul direct la fisierele existente.
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Homepage pe limba.
+RewriteRule ^(ro|en)/?$ index.php?l=$1 [L,QSA,NC]
+
+# Acceptam si varianta veche, dar PHP va face redirect catre slugul canonic.
+RewriteRule ^(ro|en)/(calea|path)/?$ calea.php?l=$1 [L,QSA,NC]
+RewriteRule ^(ro|en)/(just-sitting)/?$ just-sitting.php?l=$1 [L,QSA,NC]
+RewriteRule ^(ro|en)/(invatatura|wisdom)/?$ invatatura.php?l=$1 [L,QSA,NC]
+RewriteRule ^(ro|en)/(contact)/?$ contact.php?l=$1 [L,QSA,NC]
+
+# Politici legale
+RewriteRule ^(ro|en)/(politica-confidentialitate|privacy-policy)/?$ privacy-policy.php?l=$1 [L,QSA,NC]
+RewriteRule ^(ro|en)/(politica-cookies|cookies-policy)/?$ cookies-policy.php?l=$1 [L,QSA,NC]
+RewriteRule ^(ro|en)/(termeni-conditii|terms-conditions)/?$ terms.php?l=$1 [L,QSA,NC]
+</IfModule>
