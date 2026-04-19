@@ -11,15 +11,6 @@ $just_sitting_gallery = array_values(array_filter($just_sitting_gallery, functio
     return strcasecmp(basename($path), 'justsittingbig.png') !== 0;
 }));
 $just_sitting_gallery = array_slice($just_sitting_gallery, 0, 8);
-$just_sitting_gallery = array_map(function ($path) {
-    if (strcasecmp(basename($path), '08.jpg') === 0) {
-        $replacement = __DIR__ . '/img/09.jpg';
-        if (file_exists($replacement)) {
-            return $replacement;
-        }
-    }
-    return $path;
-}, $just_sitting_gallery);
 
 include 'head.php';
 $pagina_curenta = 'just-sitting.php';
