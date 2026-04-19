@@ -168,7 +168,7 @@ $pagina_curenta = 'just-sitting.php';
 
         <img src="" alt="" class="img-fluid rounded just-sitting-modal-img" id="justSittingScreenshotModalImg">
 
-        <!-- Săgeată DREAPTA -->
+        <!-- Săgeată DREAPTA 3 -->
         <button id="jsModalNext"
                 type="button"
                 aria-label="Imaginea următoare"
