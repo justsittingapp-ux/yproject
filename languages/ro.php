@@ -13,7 +13,7 @@ $lang = array(
 
     // Pagina Principală - Hero
     "hero_title" => "CALEA AUTENTICĂ",
-    "hero_subtitle" => "Hatha Yoga Clasică și Viziunea Vajrayana<br>Nu pentru relaxare, ci pentru Realizare • Nu pentru fitness, ci pentru Trezire",
+    "hero_subtitle" => "Sălaș în Temeiul Primordial al Realității.</br> Nu o cale de urmat, ci Adevărul care trebuie trăit.",
     "hero_btn" => "Descoperă Calea",
 	
 	// Pagina Principală - O Precizare Necesară

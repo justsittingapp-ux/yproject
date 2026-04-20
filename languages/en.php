@@ -13,7 +13,7 @@ $lang = array(
 
     // Home Page - Hero
     "hero_title" => "THE AUTHENTIC PATH",
-    "hero_subtitle" => "Classical Hatha Yoga and the Vajrayana Vision<br>Not for relaxation, but for Realization • Not for fitness, but for Awakening",
+    "hero_subtitle" => "Abiding in the Primordial Ground of Reality.</br> Not a path to be followed, but the Truth to be lived.",
     "hero_btn" => "Discover the Path",
 	
 	// Home Page - O Precizare Necesară
