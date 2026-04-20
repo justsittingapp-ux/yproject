@@ -13,7 +13,7 @@ $lang = array(
 
     // Pagina Principală - Hero
     "hero_title" => "CALEA AUTENTICĂ",
-    "hero_subtitle" => "Sălaș în Temeiul Primordial al Realității.</br> Nu o cale de urmat, ci Adevărul care trebuie trăit.",
+    "hero_subtitle" => "SĂLĂȘLUIRE ÎN TEMEIUL PRIMORDIAL AL REALITĂȚII.</br> Nu o cale de urmat, ci Adevărul care trebuie trăit.",
     "hero_btn" => "Descoperă Calea",
 	
 	// Pagina Principală - O Precizare Necesară
