@@ -210,6 +210,11 @@ h2, h3, h4, h5, h6, .navbar-brand {
     color: var(--secondary-color);
 }
 
+/* Titluri pe fundal închis (cum ar fi CTA-ul de jos) */
+.bg-dark h1, .bg-dark h2, .bg-dark h3, .bg-dark h4, .bg-dark h5, .bg-dark h6 {
+    color: var(--primary-color) !important;
+}
+
 /* Navbar Styling */
 .navbar {
     background-color: var(--secondary-color);
