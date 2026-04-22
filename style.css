@@ -65,7 +65,7 @@ main {
 
 /* Index — disclaimer (fără font neîncărcat) */
 .spiritual-disclaimer-subtitle {
-    font-family: 'Montserrat', serif;
+    font-family: 'Playfair Display', serif;
     font-weight: 500;
     letter-spacing: 0.04em;
 }
@@ -81,12 +81,13 @@ main {
     background-color: #1E2835; /* Fundalul închis din imagine */
     border: 1px solid rgba(212, 175, 55, 0.2); /* Bordură discretă aurie */
     padding: 2.5rem !important;
-    transition: transform 0.3s ease, border-color 0.3s ease;
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), border-color 0.3s ease;
 }
 
 .pillar-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
     border-color: #D4AF37;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.35) !important;
 }
 
 .pillar-card .just-sitting-subtitle {
@@ -105,7 +106,7 @@ main {
 
 /* Promo Just Sitting (index) */
 .just-sitting-promo-title {
-    font-family: 'Montserrat', serif;
+    font-family: 'Playfair Display', serif;
     color: var(--secondary-color);
     font-size: clamp(1.35rem, 3vw, 1.85rem);
     font-weight: 600;
@@ -139,7 +140,7 @@ main {
     border-bottom: 3px solid var(--primary-color);
 }
 .js-page-hero-title {
-    font-family: 'Montserrat', serif;
+    font-family: 'Playfair Display', serif;
     font-size: clamp(2rem, 5vw, 2.75rem);
     font-weight: 700;
     color: var(--primary-color);
@@ -197,22 +198,22 @@ main {
 }
 
 h1 {
-    font-family: 'Montserrat', serif;
+    font-family: 'Playfair Display', serif;
     color: var(--third-color);
 }
 h1.second {
-    font-family: 'Montserrat', serif;
+    font-family: 'Playfair Display', serif;
     color: var(--secondary-color);
 }
 h2, h3, h4, h5, h6, .navbar-brand {
-    font-family: 'Montserrat', serif;
-    color: --secondary-color;
+    font-family: 'Playfair Display', serif;
+    color: var(--secondary-color);
 }
 
 /* Navbar Styling */
 .navbar {
     background-color: var(--secondary-color);
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
     line-height: 1;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -329,7 +330,7 @@ h2, h3, h4, h5, h6, .navbar-brand {
     background-size: cover; /* Imaginea acoperă toată zona, fără să se deformeze */
     background-position: center center; /* Imaginea rămâne centrată */
     background-repeat: no-repeat;
-    background-attachment: scroll;
+    background-attachment: fixed; /* Adaugă efectul Parallax pe desktop */
     color: #fff; /* Ne asigurăm că tot textul din hero este alb */
     padding-top: 100px; /* Padding mărit pentru desktop */
     padding-bottom: 100px;
@@ -371,6 +372,7 @@ h2, h3, h4, h5, h6, .navbar-brand {
     .js-page-hero.hero-home-special {
         padding-top: 60px; /* Padding mai mic pe mobil */
         padding-bottom: 60px;
+        background-attachment: scroll; /* Dezactivăm Parallax pe mobil pentru performanță și suport pe iOS */
         /* Opțional: dacă imaginea are un subiect pe lateral care e tăiat pe mobil, 
            poți ajusta background-position aici, ex: background-position: 20% center; */
     }
@@ -419,12 +421,13 @@ h2, h3, h4, h5, h6, .navbar-brand {
     background: #fff;
     padding: 40px;
     height: 100%;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.03);
-    transition: transform 0.3s;
+    box-shadow: 0 10px 30px rgba(44, 62, 80, 0.06);
+    transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
     text-align: center;
 }
 .feature-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(44, 62, 80, 0.12);
 }
 .icon-box {
     font-size: 2rem;
@@ -481,7 +484,7 @@ footer a {
     color: #f2f0ea;
 }
 .just-sitting-subtitle {
-    font-family: 'Montserrat', serif;
+    font-family: 'Playfair Display', serif;
     font-size: 1.25rem;
     color: var(--primary-color);
     margin-bottom: 0.75rem;
@@ -605,7 +608,7 @@ footer a {
     max-width: 42rem;
 }
 .contact-page-title {
-    font-family: 'Montserrat', serif;
+    font-family: 'Playfair Display', serif;
     color: var(--secondary-color);
     font-size: clamp(1.85rem, 4vw, 2.35rem);
     font-weight: 600;
@@ -733,5 +736,16 @@ textarea.contact-input {
 .navbar .nav-lang-pastille a.lang-link:hover:not(.is-active) {
     background-color: rgba(212, 175, 55, 0.2) !important;
     color: #FFFFFF !important;
+}
+
+/* --- Global Soft Shadows Override --- */
+.shadow-sm {
+    box-shadow: 0 4px 12px rgba(44, 62, 80, 0.05) !important;
+}
+.shadow {
+    box-shadow: 0 10px 30px rgba(44, 62, 80, 0.08) !important;
+}
+.shadow-lg {
+    box-shadow: 0 20px 40px rgba(44, 62, 80, 0.12) !important;
 }
 
