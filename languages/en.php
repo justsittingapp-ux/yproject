@@ -19,7 +19,7 @@ $lang = array(
 	// Home Page - O Precizare Necesară
 	"intro_title" => "A Necessary Clarification",
 "intro_subtitle" => "On the Path, the Truth, and the Seeker",
-"intro_text_1" => "This space is not intended for rapid consumption, but for profound study. Understanding the fundamental principles of Vajrayana and Hatha Yoga requires time, patience, and a serious engagement with precise terminology.",
+"intro_text_1" => "This space is not intended for rapid consumption, but for profound study. Understanding the fundamental principles of Vajrayana requires time, patience, and a serious engagement with precise terminology.",
 "intro_text_2" => "It is vital to understand that the Ultimate Truth is not the exclusive property of Buddhism or any specific religion. The True Nature of Reality (<strong>Mahamudra</strong>) cannot be confined by dogma; it remains beyond words and duality.",
 "intro_quote" => "Buddhism is, in essence, merely a 'boat'—a skillful means (<strong>upaya</strong>) built to cross the samsaric river. But the boat is not the shore.",
 "intro_final" => "The crucial element is the seeker's heart. Without radical sincerity, no method will suffice. <strong>Truth reveals itself only to the one prepared to burn in the fire of transformation.</strong>",

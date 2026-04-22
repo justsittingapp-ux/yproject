@@ -19,7 +19,7 @@ $lang = array(
 	// Pagina Principală - O Precizare Necesară
 	"intro_title" => "O Precizare Necesară",
 "intro_subtitle" => "Despre Cale, Adevăr și Căutător",
-"intro_text_1" => "Acest spațiu nu este destinat consumului rapid, ci studiului aprofundat. Înțelegerea principiilor fundamentale ale Vajrayana și Hatha Yoga necesită timp, răbdare și o familiarizare serioasă cu o terminologie precisă.",
+"intro_text_1" => "Acest spațiu nu este destinat consumului rapid, ci studiului aprofundat. Înțelegerea principiilor fundamentale ale Vajrayana necesită timp, răbdare și o familiarizare serioasă cu o terminologie precisă.",
 "intro_text_2" => "Este vital să înțelegem că Adevărul Ultim nu este proprietatea exclusivă a Budismului sau a vreunei religii. Adevărata Natură a Realității (Mahamudra) nu poate fi îngrădită de dogme; ea este dincolo de cuvinte și dualitate.",
 "intro_quote" => "Budismul este, în esență, doar o „barcă” – un instrument abil (upaya) construit pentru a traversa râul samsaric. Dar barca nu este țărmul.",
 "intro_final" => "Elementul crucial este inima căutătorului. Fără o sinceritate radicală, nicio metodă nu va funcționa. <strong>Adevărul se revelează doar celui pregătit să ardă în focul transformării.</strong>",
