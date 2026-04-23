@@ -1,15 +1,19 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 
-# Redirect www -> non-www (canonical domain).
-RewriteCond %{HTTP_HOST} ^www\.just-sitting\.com$ [NC]
-RewriteRule ^(.*)$ https://just-sitting.com/$1 [R=301,L]
+# 1. Fortam HTTPS si non-WWW intr-un singur pas (evitam redirect chains)
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteRule ^(.*)$ https://just-sitting.com/$1 [L,R=301,NE]
 
-# Domeniul fara sufix de limba merge pe varianta implicita (301 permanent).
-RewriteRule ^$ /en [R=301,L]
+# 2. Domeniul fara sufix de limba merge pe varianta implicita EN (301 permanent).
+RewriteRule ^$ https://just-sitting.com/en [R=301,L]
 
 # Compatibilitate pentru favicon la radacina domeniului.
 RewriteRule ^favicon\.ico$ imgs/favicon.ico [L,NC]
+
+# Redirectionam vechile URL-uri cu .php indexate din greseala (ex: /en/contact.php -> /en/contact)
+RewriteRule ^(ro|en)/([^/]+)\.php$ https://just-sitting.com/$1/$2 [L,R=301,NC]
 
 # Pastram accesul direct la fisierele existente.
 RewriteCond %{REQUEST_FILENAME} -f [OR]
